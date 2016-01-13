@@ -1,3 +1,5 @@
+The iOSTutorials and AndroidTutorials are from Aileen Pierce's ATLS4120 lectures at the University of Colorado Boulder.
+
 ##Get Started with Android Development
 Download Android Studio
 Download Java Development Kit (Jdk) Version 7
