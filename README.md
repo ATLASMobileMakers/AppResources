@@ -1,5 +1,3 @@
-# This repo contains mobile app tutorials for both Android and iOS development!
-
 ##Get Started with Android Development
 Download Android Studio
 Download Java Development Kit (Jdk) Version 7
