@@ -13,67 +13,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bill Amount"
-        android:id="@+id/textView"
+        android:id="@+id/billLabel"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="109dp" />
+        android:layout_marginTop="39dp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/bill"
-        android:layout_alignBottom="@+id/textView"
+        android:id="@+id/billField"
+        android:layout_alignBottom="@+id/billLabel"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/percent"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginTop="39dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Percent Tip"
-        android:id="@+id/textView2"
-        android:layout_alignBottom="@+id/editText2"
+        android:id="@+id/percentLabel"
+        android:layout_below="@+id/billLabel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/percentField"
+        android:layout_alignBottom="@+id/percentLabel"
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tip"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginTop="82dp" />
+        android:id="@+id/tipLabel"
+        android:layout_below="@+id/percentLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tip"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
+        android:id="@+id/tipResult"
+        android:layout_alignBottom="@+id/tipLabel"
+        android:layout_alignParentRight="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"
-        android:id="@+id/button"
+        android:id="@+id/calculateButton"
         android:onClick="calculateTip"
-        android:layout_below="@+id/tip"
+        android:layout_below="@+id/tipResult"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp" />
 </RelativeLayout>
